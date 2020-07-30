@@ -2,8 +2,8 @@ package com.chelkatrao;
 
 public enum BotConfig {
 
-    BOT_TOKEN("1119368061:AAHgLw7t-X2lims5T2M6hy50Cl_Y6ZwITwY"),
-    BOT_USERNAME("chelkatrao_bot");
+    BOT_TOKEN("1293443384:AAHG1B6INZKTbvv1-nOR1w3bIAWegNvco_E"),
+    BOT_USERNAME("namozvaqtitaqvimbot");
 
     private String value;
 
