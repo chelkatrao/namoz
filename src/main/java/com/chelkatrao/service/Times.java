@@ -39,8 +39,6 @@ public class Times {
     }
 
     public static String getQuyoshTime() {
-        if (allTimes == null) // TODO: vaqtinchali turipti keyin o'chirib tashash kerak
-            allTimes = (Map<String, Object>) getAllTimesFromApi().get(0).get("timings");
         return (String) allTimes.get("Sunrise");
     }
 
