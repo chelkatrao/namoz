@@ -19,7 +19,7 @@ public class Times {
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
 
-        LocalDate currentDate = LocalDate.now();
+        LocalDate currentDate = LocalDate.now(); //https://aladhan.com/prayer-times-api
         String url = "http://api.aladhan.com/v1/calendarByAddress?address=%20Tashkent&method=2&month=" + currentDate.getMonthValue() + "&year=" + currentDate.getYear() + "&school=1";
 
         ResponseEntity<Object> data = restTemplate.exchange(url, HttpMethod.GET, entity, Object.class);
