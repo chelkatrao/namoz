@@ -13,7 +13,7 @@ public class DailyPrayerTimeSchedule {
     private GroupService groupService;
     private TelegramBotsApi telegramBotsApi;
 
-    @Scheduled(cron = "10 30 1,16 * * *")
+    @Scheduled(cron = "10 10 1 * * *")
     public void takeNewPrayerTimes() throws TelegramApiRequestException {
 
         SetPrayerTimes setPrayerTimes = new SetPrayerTimes(groupService);
