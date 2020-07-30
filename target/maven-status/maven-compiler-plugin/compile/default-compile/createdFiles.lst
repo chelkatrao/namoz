@@ -1,0 +1,16 @@
+com\chelkatrao\model\Time.class
+com\chelkatrao\service\timer\CustomTimerTask.class
+com\chelkatrao\config\WebConfiguration.class
+com\chelkatrao\service\Times.class
+com\chelkatrao\service\SetPrayerTimes$1.class
+com\chelkatrao\bot\NamazBot.class
+com\chelkatrao\service\GroupService.class
+com\chelkatrao\BotConfig.class
+com\chelkatrao\service\DailyPrayerTimeSchedule.class
+com\chelkatrao\App.class
+com\chelkatrao\service\SetPrayerTimes.class
+com\chelkatrao\repository\GroupRepository.class
+com\chelkatrao\model\Groups.class
+com\chelkatrao\Utils.class
+com\chelkatrao\service\timer\TimerExecutor.class
+com\chelkatrao\SuccessRest.class
