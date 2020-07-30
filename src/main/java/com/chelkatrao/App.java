@@ -25,6 +25,7 @@ public class App {
 
         TelegramBotsApi telegramBotApi = new TelegramBotsApi();
         dailyPrayerTimeSchedule.setTelegramBotsApi(telegramBotApi);
+
         dailyPrayerTimeSchedule.takeNewPrayerTimes();
     }
 }
