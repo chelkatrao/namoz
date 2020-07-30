@@ -8,11 +8,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
+import org.telegram.telegrambots.exceptions.TelegramApiRequestException;
 
 @EnableScheduling
 @SpringBootApplication
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws TelegramApiRequestException {
         ApiContextInitializer.init();
 
         ConfigurableApplicationContext run = SpringApplication.run(App.class, args);
@@ -24,5 +25,6 @@ public class App {
 
         TelegramBotsApi telegramBotApi = new TelegramBotsApi();
         dailyPrayerTimeSchedule.setTelegramBotsApi(telegramBotApi);
+        dailyPrayerTimeSchedule.takeNewPrayerTimes();
     }
 }
